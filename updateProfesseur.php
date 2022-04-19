@@ -251,7 +251,7 @@ session_start();
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <label for="etat" class="donne">Etat : </label>
+                                                    <label for="etat" class="donne">Etat (Appartient à l'ENSAJ ?): </label>
                                                     <input type="text" class="form-control form-control-user" id="etat"
                                                     value="<?php echo $_SESSION['etat']?>" name="etat">
                                                 </div>

@@ -27,7 +27,7 @@ class ProfesseurService implements IDao {
 
     public function findAll() {
         $profs = array();
-        $query = "select * from Professeur";
+        $query = "select * from professeur";
         $req = $this->connexion->getConnexion()->prepare($query);
         $req->execute();
         while ($e = $req->fetch(PDO::FETCH_OBJ)) {
@@ -69,7 +69,7 @@ class ProfesseurService implements IDao {
 
     public function findDemands() {
         $profs = array();
-        $query = "select * from Professeur where verification = 'En attente' and dossier_scientifique <> '' and dossier_pedagogique <> '' and dossier_administratif <> ''";
+        $query = "select * from professeur where verification = 'En attente' and dossier_scientifique <> '' and dossier_pedagogique <> '' and dossier_administratif <> ''";
         $req = $this->connexion->getConnexion()->prepare($query);
         $req->execute();
         while ($e = $req->fetch(PDO::FETCH_OBJ)) {
