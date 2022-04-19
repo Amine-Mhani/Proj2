@@ -4,7 +4,7 @@ session_start();
 ?>
 <?php
   
-  $con = mysqli_connect("localhost","root","","platform");
+  $con = mysqli_connect("remotemysql.com","QyAQjHlDFm","DKSrKBVlQe","QyAQjHlDFm");
 
   $sql = "SELECT * FROM `specialite`";
   $all_categories = mysqli_query($con,$sql);

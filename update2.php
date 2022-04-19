@@ -4,10 +4,20 @@ include_once 'services/AdminService.php';
 include_once 'beans/Admin.php';
 extract($_POST);
 
+/*Local database
 $host = 'localhost';
 $dbname = 'platform';
 $login = 'root';
-$password = '';
+$password = '';*/
+
+
+//Remote Database
+$host = 'remotemysql.com';
+$dbname = 'QyAQjHlDFm';
+$login = 'QyAQjHlDFm';
+$password = 'DKSrKBVlQe';
+
+
 try {
     $con = new PDO("mysql:host=$host;dbname=$dbname", $login, $password);
     $con->query("SET NAMES UTF8");
