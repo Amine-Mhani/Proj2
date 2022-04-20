@@ -41,7 +41,7 @@ parse_str($url_components['query'], $params);
                     <div class="col-lg-7" style="margin: auto;">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Créer un compte!</h1>
                             </div>
                             <form class="user" method="POST" action="createAccount.php">
                                 <div class="form-group row">
